@@ -16,5 +16,5 @@ async def dicklen(ctx):
         d.update(c)
         await ctx.send(d[format(ctx.message.author.id)] + 'cm - is your dick size {}'.format(ctx.message.author.mention))
 #bot.run(TOKEN)
-token = os.environ.get('BOT_TOKEN')
+token = os.environ.get(BOT_TOKEN)
 bot.run(str(token))
