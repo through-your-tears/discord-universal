@@ -2,7 +2,6 @@ import random
 import discord
 import os
 from discord.ext import commands
-TOKEN='Njg5NTgzMDY3NTA5NDI0MjEz.XnE-aQ.WShucaO0bkOS3qmpbpwyelyy5GI'
 bot = commands.Bot(command_prefix='!')
 d={}
 @bot.command(pass_context=True)
