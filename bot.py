@@ -15,6 +15,10 @@ async def dicklen(ctx):
         c={format(ctx.message.author.id): str(random.randrange(10, 31))}
         d.update(c)
         await ctx.send(d[format(ctx.message.author.id)] + 'cm - is your dick size {}'.format(ctx.message.author.mention))
+@bot.command(pass_context=True)
+async def clear(ctx, x = 1):
+    x=int(x)+1
+    await ctx.channel.purge(limit = x)
 #bot.run(TOKEN)
 token = os.environ.get('BOT_TOKEN')
 bot.run(str(token))
