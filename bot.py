@@ -15,7 +15,7 @@ async def help(ctx):
     emb.add_field(name = '{}dicklen'.format('!'), value = 'Измерить длину вашего прибора')
     emb.add_field(name = '{}clear (введенное число)'.format('!'), value = 'Удалить последние (введенное число) сообщений')
     await ctx.send(embed = emb)
-@bot.command(pass_context=True)ф
+@bot.command(pass_context=True)
 async def hi(ctx):
     await ctx.send('Hey, {}'.format(ctx.message.author.mention))
 @bot.command(pass_context=True)
